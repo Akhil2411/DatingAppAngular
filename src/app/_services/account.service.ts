@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { map, ReplaySubject } from 'rxjs';
 import { environment } from 'src/environments/environment';
 import { User } from '../_models/user';
+import { MembersService } from './members.service';
 
 
 @Injectable({
@@ -45,6 +46,6 @@ export class AccountService {
   
   logout() {
     localStorage.removeItem('user');
-   this.currentUserSource.next(null);
+    this.currentUserSource.next(null);
   }
 }

@@ -6,3 +6,6 @@ img {
     border: 2px solid #fff;
     display: inline;
 } 
+a{
+    text-decoration: none;
+}
